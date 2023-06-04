@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>510</x>
+      <y>100</y>
+      <w>320</w>
+      <h>170</h>
+    </coordinates>
+    <panel_attributes>
+    Institución
+       
+--
+-contadorAlumnos: int 
+-contadorProfesores: int
+--
+# matricularAlumno(alumno: Alumno)
+# desmatricularAlumno(alumno: Alumno)
+# matricularProfesor(profesor: Profesor)
+# desmatricularProfesor(profesor: Profesor)
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>300</x>
+      <y>350</y>
+      <w>210</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>Alumno
+--
+- nombre
+- apellidos 
+- nacimiento
+- notas</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>840</x>
+      <y>340</y>
+      <w>210</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>Profesor
+--
+- nombre
+- apellidos 
+- nacimiento
+--
+- asignaturas: List&lt;String&gt;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>400</x>
+      <y>260</y>
+      <w>290</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>270.0;10.0;10.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>660</x>
+      <y>260</y>
+      <w>310</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;290.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>190</x>
+      <y>660</y>
+      <w>210</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>Ciclo  
+--
+- grado: String 
+- curso: String  
+- modalidad: String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>410</x>
+      <y>660</y>
+      <w>210</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>FPBasica             
+--
+- nombreMadre: String
+- nombrePadre: String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>280</x>
+      <y>420</y>
+      <w>140</w>
+      <h>260</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>120.0;10.0;10.0;240.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>400</x>
+      <y>420</y>
+      <w>130</w>
+      <h>260</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;110.0;240.0</additional_attributes>
+  </element>
+</diagram>
